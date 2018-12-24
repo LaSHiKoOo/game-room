@@ -44,6 +44,7 @@
       background: transparent!important;
       box-shadow: none!important;
       width: 83px!important;
+      //position: absolute!important;
   }
   ::ng-deep .left-panel.override-panel {
     width: 280px!important;
@@ -69,5 +70,35 @@
   }
   ::ng-deep .img_edit{
     width: 15%!important;
+  }
+  ::ng-deep ::-webkit-scrollbar {
+    width: 0!important;
+  }
+  //ნიკოს ჩამატებული
+::ng-deep ::-webkit-scrollbar {
+  width: 0px!important;//widht: 5px; ნიკო
+  }
+
+/* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent!important;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent!important;//#888 ნიკო
+    border-radius: 5 px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent!important;//#555 ნიკო
+    }
+  ::ng-deep .black-panel {
+    min-height: 100vh; 
+    min-width: 100vw; 
+    background-color:#9B59B6;
+    position: absolute;
+   
   }
 }
