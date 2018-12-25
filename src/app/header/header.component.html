@@ -4,13 +4,17 @@
       <a class="navbar-brand" href="./"
         ><img src="../../assets/images/logo.png" alt="Logo"
       /></a>
-      <a id="menuToggle" class="menutoggle"
-      #menuToggle><i class="fa fa-bars"></i></a>
+      <a
+        *ngIf="userStatus === 'admin'"
+        id="menuToggle"
+        class="menutoggle"
+        (click)="menuToggle()"
+        ><i class="fa fa-bars"></i
+      ></a>
     </div>
   </div>
   <div class="top-right">
     <div class="header-menu">
-
       <div class="user-area dropdown float-right">
         <a
           href="#"

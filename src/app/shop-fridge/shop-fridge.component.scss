@@ -1,0 +1,50 @@
+.card {
+  border: 0;
+  .card-body {
+    float: left;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    .table {
+      width: 100%;
+      margin-bottom: 1rem;
+      background-color: transparent;
+      border-bottom: 2px solid #dee2e6;
+      thead {
+        display: block;
+        background: #f1f2f7;
+      }
+      tbody {
+        display: block;
+        max-height: calc(100vh - 230px);
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      th {
+        font-size: 15px;
+        text-align: center;
+      }
+      td {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        text-align: center;
+        &:last-child {
+          width: 30%;
+        }
+      }
+    }
+    .bottomContainer {
+      width: 90%;
+      margin-left: 5%;
+      p {
+        font-size: 14px;
+        span {
+          font-size: 16px;
+          color: red;
+        }
+      }
+    }
+  }
+}

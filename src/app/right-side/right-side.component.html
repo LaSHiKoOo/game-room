@@ -1,8 +1,8 @@
 <div id="right-panel" class="right-panel">
-  <app-header></app-header>
+  <app-header [appData]="data"></app-header>
 
-  <app-content [appData]="data"  *ngIf="state === 'home'"></app-content>
-  <app-productlist  *ngIf="state === 'productList'"></app-productlist>
+  <app-content [appData]="data" *ngIf="state === 'home'"></app-content>
+  <app-productlist *ngIf="state === 'productList'"></app-productlist>
   <app-employerlist *ngIf="state === 'employeeList'"></app-employerlist>
   <app-register-employe *ngIf="state === 'addEmployee'"></app-register-employe>
   <app-register-product *ngIf="state === 'addProduct'"></app-register-product>
@@ -13,8 +13,6 @@
   <app-consolelist *ngIf="state === 'consoleList'"></app-consolelist>
   <app-register-console *ngIf="state === 'addconsole'"></app-register-console>
   <app-edit-console *ngIf="state === 'consoleEdit'"></app-edit-console>
-
-
 
   <div class="clearfix"></div>
 

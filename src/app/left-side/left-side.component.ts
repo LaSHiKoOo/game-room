@@ -1,21 +1,22 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-left-side',
-  templateUrl: './left-side.component.html',
-  styleUrls: ['./left-side.component.scss']
+  selector: "app-left-side",
+  templateUrl: "./left-side.component.html",
+  styleUrls: ["./left-side.component.scss"]
 })
 export class LeftSideComponent implements OnInit {
-
   data: any;
 
   @Input() set appData(val: any) {
     this.data = val;
   }
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  get userStatus() {
+    return this.data.data.userStatus;
   }
-
 }

@@ -1,3 +1,8 @@
 <aside id="left-panel" class="left-panel">
-    <app-menu [appData]= "data" class="leftMenu"></app-menu>
+  <app-menu
+    [appData]="data"
+    class="leftMenu"
+    *ngIf="userStatus === 'admin'"
+  ></app-menu>
+  <app-shop-fridge *ngIf="userStatus === 'customer'"></app-shop-fridge>
 </aside>

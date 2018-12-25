@@ -30,6 +30,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { TimerComponent } from './components/timer/timer.component';
 import { SelectBoxComponent } from './components/select-box/select-box.component';
 import { SingleComputerComponent } from './single-computer/single-computer.component';
+import { ShopFridgeComponent } from './shop-fridge/shop-fridge.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { SingleComputerComponent } from './single-computer/single-computer.compo
     ButtonComponent,
     TimerComponent,
     SelectBoxComponent,
-    SingleComputerComponent
+    SingleComputerComponent,
+    ShopFridgeComponent
   ],
   imports: [
     BrowserModule
