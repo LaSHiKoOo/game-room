@@ -5,7 +5,7 @@ export default class AppData {
     iconList: ['pe-7s-cash', 'pe-7s-cart', 'pe-7s-browser', 'pe-7s-users'],
     currency: '₾',
     titleList: ['Revenue', 'Sales', 'Templates', 'Clients'],
-    valueList: [23569, 34355, 3468, 2968],
+    valueList: [2569, 34355, 3468, 2968],
     tableContent: [
       {
         id: 5634,
