@@ -1,8 +1,11 @@
 <aside id="left-panel" class="left-panel">
+    <div (click)='CustmerMenuToggle()' class="SlideButton active">
+        <i class="fas fa-caret-right"></i>
+    </div>
   <app-menu
     [appData]="data"
     class="leftMenu"
     *ngIf="userStatus === 'admin'"
   ></app-menu>
-  <app-shop-fridge *ngIf="userStatus === 'customer'"></app-shop-fridge>
+  <app-shop-fridge class="ForCustomer" *ngIf="userStatus === 'customer'"></app-shop-fridge>
 </aside>

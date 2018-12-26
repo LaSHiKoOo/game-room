@@ -1,4 +1,24 @@
-@media (max-width: 992px) {   
+::ng-deep  .fa-caret-right {
+  display: none!important;
+}
+::ng-deep .CustomerPanel .fa-caret-right {
+  display: unset!important;
+}
+::ng-deep .navbar[_ngcontent-c3] .navbar-nav[_ngcontent-c3] li.menu-item-has-children.show[_ngcontent-c3] a[_ngcontent-c3]:before {
+  
+  right: -13px!important;
+}
+::ng-deep .open aside .leftMenu .navbar .nav li.dropdown a:before {
+  right: -13px !important;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {   
   
     ::ng-deep .right-panel {
      
@@ -16,7 +36,7 @@
     ::ng-deep .header {
       width: fit-content;
     }
-    ::ng-deep table {
+    ::ng-deep .right-panel table {
       display: none;
     }
     ::ng-deep aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu{
@@ -62,8 +82,10 @@
       padding-right: 30px;
       width: 100%;
   }
-  ::ng-deep .navbar[_ngcontent-c3] .navbar-nav[_ngcontent-c3] li.menu-item-has-children.show[_ngcontent-c3] a[_ngcontent-c3]:before {
-    border:none;
+  ::ng-deep .sub-menu li a {
+    border:none!important;
+    
+    border-color: transparent!important;
   }
   ::ng-deep .fa.fa-bars{
     display: none;
@@ -100,5 +122,94 @@
     background-color:#9B59B6;
     position: absolute;
    
+  }
+
+
+
+  //customer panel start 
+  ::ng-deep .CustomerPanel  {
+    width: 0!important;
+    //display: none;
+  }
+  ::ng-deep .ForCustomer  {
+    height: 100%;
+    display: none;
+  }
+  ::ng-deep .ForCustomer .card {
+    height: 100%;
+  }
+  ::ng-deep .OpenRight .ForCustomer {
+    display: block;
+  }
+  ::ng-deep .CustomerPanelR {
+    margin-left: 0!important;
+    
+  }
+  ::ng-deep .CustomerPanel .SlideButton.active {
+    width: 25px;
+    height: 160px;
+    position: fixed;
+    left: 0;
+    top: 135px;
+    display: block;
+    background-color: #656565;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 160px; 
+  }
+  ::ng-deep .OpenRight,  ::ng-deep .ForCustomer {
+    width: fit-content!important;
+   
+  }
+  ::ng-deep .OpenRight .SlideButton.active {
+    left: 360px!important;
+  }
+  ::ng-deep header.header[_ngcontent-c5] {
+    width: 100%;
+    
+  }
+  ::ng-deep .top-left[_ngcontent-c5] {
+    width: 150px!important;
+    float: left;
+  }
+  ::ng-deep .top-right {
+    float: right;
+  }
+  ::ng-deep .fa-caret-right.fa-caret-left::before {
+    content: '\f0d9'!important;
+    //display: none;
+  }
+  
+  ::ng-deep .navbar-header,::ng-deep .top-left {
+    height: 100%!important;
+  }
+  ::ng-deep .dropdown-toggle::before {
+    display: block!important;
+  }
+
+  ::ng-deep .CustomerPanel {
+    -webkit-box-shadow: 18px -11px 22px -14px rgba(0, 0, 0, 0.75) !important;
+    -moz-box-shadow: 18px -11px 22px -14px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: 18px -11px 22px -14px rgba(0, 0, 0, 0.75) !important;
+  }
+
+
+
+
+
+
+}
+
+
+@media (max-width:425px) {
+  ::ng-deep .ForCustomer  {
+  
+    width: 290px!important;
+  }
+  ::ng-deep .OpenRight .SlideButton.active {
+    left: 290px !important;
   }
 }

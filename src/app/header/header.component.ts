@@ -7,24 +7,28 @@ import { Component, OnInit, ViewChild, ElementRef, Input } from "@angular/core";
 })
 export class HeaderComponent implements OnInit {
   data: any;
+  elementRef: any;
+
 
   @Input()
   set appData(val: any) {
     this.data = val;
   }
-  constructor() {}
+  constructor(private _eref: ElementRef) {}
 
   ngOnInit() {
     const windowWidth = window.screen.width;
-    if (windowWidth < 992) {
+    if (windowWidth < 1025) {
       console.log(
         (document.getElementsByTagName("img")[0].src =
           "../../assets/images/logo2.png")
       );
       document.getElementsByTagName("img")[0].classList.add("img_edit");
+      this.CustomerPanel();
     }
   }
   menuToggle() {
+    const windowWidth=window.screen.width;
     if (windowWidth < 1010) {
       document.getElementsByTagName("body")[0].classList.remove("open");
       if (windowWidth < 760) {
@@ -40,5 +44,24 @@ export class HeaderComponent implements OnInit {
 
   get userStatus() {
     return this.data.data.userStatus;
+  }
+  
+
+  CustomerPanel()
+  {
+    const element = document.getElementsByClassName('left-panel')[0];
+    const ForCustomer = document.getElementsByClassName('ForCustomer');
+    const windowWidth=window.screen.width;
+    console.log(windowWidth);
+    if (windowWidth < 1025) {
+      if(ForCustomer.length>0){
+      document.getElementsByClassName("left-panel")[0].classList.add("CustomerPanel");
+      document.getElementsByClassName("right-panel")[0].classList.add("CustomerPanelR");
+    } else {
+      
+      document.getElementsByClassName("left-panel")[0].classList.remove("CustomerPanel");
+      document.getElementsByClassName("right-panel")[0].classList.remove("CustomerPanelR");
+    }
+  }
   }
 }

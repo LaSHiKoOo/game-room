@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from "@angular/core";
 export class LeftSideComponent implements OnInit {
   data: any;
 
+ 
   @Input() set appData(val: any) {
     this.data = val;
   }
@@ -18,5 +19,12 @@ export class LeftSideComponent implements OnInit {
 
   get userStatus() {
     return this.data.data.userStatus;
+  }
+
+  CustmerMenuToggle() {
+    document.getElementById("left-panel").classList.toggle("OpenRight");
+    //document.getElementsByClassName('fas')[0].classList.remove("fa-caret-right");
+    document.getElementsByClassName('fas')[0].classList.toggle("fa-caret-left");
+    
   }
 }

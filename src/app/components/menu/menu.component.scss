@@ -338,7 +338,8 @@
 
                     a{
                         &:before{
-                            display: block !important;
+                            //display: block !important;
+                            display: none;
                         }
                     }
                 }
