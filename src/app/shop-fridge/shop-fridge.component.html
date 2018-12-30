@@ -9,139 +9,31 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>პეპსი</td>
-          <td>1.1 ₾</td>
+        <tr *ngFor="let item of shopContent; let i = index">
+          <td>{{ item.item }}</td>
+          <td>{{ item.price }} ₾</td>
           <td>
             <input
               type="number"
               value="0"
               min="0"
+              [max]="getMax(item)"
               step="1"
               class="form-control"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>ფანტა</td>
-          <td>1.1 ₾</td>
-          <td>
-            <input
-              type="number"
-              type="number"
-              value="0"
-              min="0"
-              step="1"
-              class="form-control"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>სპრაიტი</td>
-          <td>1.1 ₾</td>
-          <td>
-            <input
-              type="number"
-              type="number"
-              value="0"
-              min="0"
-              step="1"
-              class="form-control"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>სპრაიტი</td>
-          <td>1.1 ₾</td>
-          <td>
-            <input
-              type="number"
-              type="number"
-              value="0"
-              min="0"
-              step="1"
-              class="form-control"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>სპრაიტი</td>
-          <td>1.1 ₾</td>
-          <td>
-            <input
-              type="number"
-              type="number"
-              value="0"
-              min="0"
-              step="1"
-              class="form-control"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>სპრაიტი</td>
-          <td>1.1 ₾</td>
-          <td>
-            <input
-              type="number"
-              type="number"
-              value="0"
-              min="0"
-              step="1"
-              class="form-control"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>სპრაიტი</td>
-          <td>1.1 ₾</td>
-          <td>
-            <input
-              type="number"
-              type="number"
-              value="0"
-              min="0"
-              step="1"
-              class="form-control"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>სპრაიტი</td>
-          <td>1.1 ₾</td>
-          <td>
-            <input
-              type="number"
-              type="number"
-              value="0"
-              min="0"
-              step="1"
-              class="form-control"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>სპრაიტი</td>
-          <td>1.1 ₾</td>
-          <td>
-            <input
-              type="number"
-              type="number"
-              value="0"
-              min="0"
-              step="1"
-              class="form-control"
+              (input)="sellItem(i, $event)"
             />
           </td>
         </tr>
       </tbody>
     </table>
-    <div class="bottomContainer">
-      <p>ფასი : <span> 5₾</span></p>
-      <button type="button" class="btn btn-outline-success btn-block">
+    <div class="bottomContainer" *ngIf="shopContent.length > 0">
+      <button
+        type="button"
+        class="btn btn-outline-success btn-block"
+        (click)="confirmSell()"
+      >
         Sell
       </button>
     </div>
   </div>
- 
 </div>

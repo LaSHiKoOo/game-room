@@ -1,0 +1,13 @@
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span>{{ modalContent.name }}</span>
+      <span class="close" (click)="closeModal.emit('')">&times;</span>
+    </div>
+    <app-confirm-modal
+      *ngIf="modalContent.type === 'shopModal'"
+      [modalContent]="modalContent"
+      (closeModal)="closeModal.emit($event)"
+    ></app-confirm-modal>
+  </div>
+</div>

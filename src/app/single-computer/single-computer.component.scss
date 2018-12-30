@@ -41,7 +41,7 @@
       background: rgba($color: #000000, $alpha: 0.3);
     }
     [data-title]:hover::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: -10px;
       display: inline-block;
@@ -63,7 +63,7 @@
       display: flex;
       flex-direction: row;
       .selectBox {
-        margin-left: 5%;
+        margin-left: 5px;
         flex: 1;
         justify-content: center;
         align-items: center;

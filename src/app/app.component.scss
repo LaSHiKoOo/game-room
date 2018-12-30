@@ -1,151 +1,161 @@
-::ng-deep  .fa-caret-right {
-  display: none!important;
+::ng-deep .fa-caret-right {
+  display: none !important;
 }
 ::ng-deep .CustomerPanel .fa-caret-right {
-  display: unset!important;
+  display: unset !important;
 }
-::ng-deep .navbar[_ngcontent-c3] .navbar-nav[_ngcontent-c3] li.menu-item-has-children.show[_ngcontent-c3] a[_ngcontent-c3]:before {
-  
-  right: -13px!important;
+::ng-deep
+  .navbar[_ngcontent-c3]
+  .navbar-nav[_ngcontent-c3]
+  li.menu-item-has-children.show[_ngcontent-c3]
+  a[_ngcontent-c3]:before {
+  right: -13px !important;
 }
 ::ng-deep .open aside .leftMenu .navbar .nav li.dropdown a:before {
   right: -13px !important;
 }
 
-
-
-
-
-
-
-@media (max-width: 1024px) {   
-  
-    ::ng-deep .right-panel {
-     
-      margin-left: 83px!important;
-      width: fit-content;
-    }
-    ::ng-deep body {     
-      
-      width: fit-content;
-    }
-    ::ng-deep .content {
-      width: fit-content;
-      
-    }
-    ::ng-deep .header {
-      width: fit-content;
-    }
-    ::ng-deep .right-panel table {
-      display: none;
-    }
-    ::ng-deep aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu{
-      display: none!important;
-
-    }
-    ::ng-deep aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu.show{
-      display: block!important;
-
-    }
-    
-    ::ng-deep aside.left-panel[_ngcontent-c1] {
-      background: transparent!important;
-      box-shadow: transparent!important;
-      
+@media (max-width: 1024px) {
+  ::ng-deep .right-panel {
+    margin-left: 83px !important;
+    width: fit-content;
   }
-  
-  ::ng-deep aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu.show{
-      width: 83px!important;
-
-    }
-    ::ng-deep .left-panel{
-      max-width: none!important;
-      z-index: 1!important;
-      background: transparent!important;
-      box-shadow: none!important;
-      width: 83px!important;
-      //position: absolute!important;
+  ::ng-deep body {
+    width: fit-content;
   }
-  ::ng-deep .left-panel.override-panel {
-    width: 280px!important;
+  ::ng-deep .content {
+    width: fit-content;
   }
-  ::ng-deep ul.nav.navbar-nav {
-      max-width: 83px!important;
+  ::ng-deep .header {
+    width: fit-content;
   }
-  
-  .navbar[_ngcontent-c3] .navbar-nav[_ngcontent-c3] li.menu-item-has-children.show[_ngcontent-c3] .sub-menu[_ngcontent-c3]{
-      left: 83px;
-      z-index: 1!important;
-  } 
-  ::ng-deep .navbar[_ngcontent-c3] .navbar-nav[_ngcontent-c3] li[_ngcontent-c3] {
-      padding-left: 0!important;
-      padding-right: 30px;
-      width: 100%;
-  }
-  ::ng-deep .sub-menu li a {
-    border:none!important;
-    
-    border-color: transparent!important;
-  }
-  ::ng-deep .fa.fa-bars{
+  ::ng-deep .right-panel table {
     display: none;
   }
-  ::ng-deep .img_edit{
-    width: 15%!important;
+  ::ng-deep
+    aside.left-panel
+    .navbar
+    .navbar-nav
+    li.menu-item-has-children
+    .sub-menu {
+    display: none !important;
   }
-  ::ng-deep ::-webkit-scrollbar {
-    width: 0!important;
-  }
-  //ნიკოს ჩამატებული
-::ng-deep ::-webkit-scrollbar {
-  width: 0px!important;//widht: 5px; ნიკო
+  ::ng-deep
+    aside.left-panel
+    .navbar
+    .navbar-nav
+    li.menu-item-has-children
+    .sub-menu.show {
+    display: block !important;
   }
 
-/* Track */
+  ::ng-deep aside.left-panel[_ngcontent-c1] {
+    background: transparent !important;
+    box-shadow: transparent !important;
+  }
+
+  ::ng-deep
+    aside.left-panel
+    .navbar
+    .navbar-nav
+    li.menu-item-has-children
+    .sub-menu.show {
+    width: 83px !important;
+  }
+  ::ng-deep .left-panel {
+    max-width: none !important;
+    z-index: 1 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    width: 83px !important;
+    //position: absolute!important;
+  }
+  ::ng-deep .left-panel.override-panel {
+    width: 280px !important;
+  }
+  ::ng-deep ul.nav.navbar-nav {
+    max-width: 83px !important;
+  }
+
+  .navbar[_ngcontent-c3]
+    .navbar-nav[_ngcontent-c3]
+    li.menu-item-has-children.show[_ngcontent-c3]
+    .sub-menu[_ngcontent-c3] {
+    left: 83px;
+    z-index: 1 !important;
+  }
+  ::ng-deep
+    .navbar[_ngcontent-c3]
+    .navbar-nav[_ngcontent-c3]
+    li[_ngcontent-c3] {
+    padding-left: 0 !important;
+    padding-right: 30px;
+    width: 100%;
+  }
+  ::ng-deep .sub-menu li a {
+    border: none !important;
+
+    border-color: transparent !important;
+  }
+  ::ng-deep .fa.fa-bars {
+    display: none;
+  }
+  ::ng-deep .img_edit {
+    width: 15% !important;
+  }
+  ::ng-deep ::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  //ნიკოს ჩამატებული
+  ::ng-deep ::-webkit-scrollbar {
+    width: 0px !important; //widht: 5px; ნიკო
+  }
+
+  /* Track */
   ::-webkit-scrollbar-track {
-    background: transparent!important;
+    background: transparent !important;
   }
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: transparent!important;//#888 ნიკო
+    background: transparent !important; //#888 ნიკო
     border-radius: 5 px;
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: transparent!important;//#555 ნიკო
-    }
+    background: transparent !important; //#555 ნიკო
+  }
   ::ng-deep .black-panel {
-    min-height: 100vh; 
-    min-width: 100vw; 
-    background-color:#9B59B6;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #9b59b6;
     position: absolute;
-   
   }
 
-
-
-  //customer panel start 
-  ::ng-deep .CustomerPanel  {
-    width: 0!important;
-    //display: none;
+  //customer panel start
+  ::ng-deep .CustomerPanel {
+    width: 0 !important;
   }
-  ::ng-deep .ForCustomer  {
+  ::ng-deep .ForCustomer {
+    display: block;
+    transition: 2s;
     height: 100%;
-    display: none;
+    margin-left: -290px;
   }
   ::ng-deep .ForCustomer .card {
     height: 100%;
   }
   ::ng-deep .OpenRight .ForCustomer {
-    display: block;
+    transition: 2s;
+    margin-left: 0px;
   }
   ::ng-deep .CustomerPanelR {
-    margin-left: 0!important;
-    
+    transition: 2s;
+    margin-left: 0 !important;
   }
   ::ng-deep .CustomerPanel .SlideButton.active {
+    transition: 2s;
     width: 25px;
     height: 160px;
     position: fixed;
@@ -156,58 +166,55 @@
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     color: white;
-    vertical-align: middle;
     text-align: center;
-    line-height: 160px; 
+    line-height: 160px;
   }
-  ::ng-deep .OpenRight,  ::ng-deep .ForCustomer {
-    width: fit-content!important;
-   
+  ::ng-deep .OpenRight,
+  ::ng-deep .ForCustomer {
+    width: fit-content !important;
   }
   ::ng-deep .OpenRight .SlideButton.active {
-    left: 360px!important;
+    left: 360px !important;
   }
   ::ng-deep header.header[_ngcontent-c5] {
     width: 100%;
-    
   }
   ::ng-deep .top-left[_ngcontent-c5] {
-    width: 150px!important;
+    width: 150px !important;
     float: left;
   }
   ::ng-deep .top-right {
     float: right;
   }
   ::ng-deep .fa-caret-right.fa-caret-left::before {
-    content: '\f0d9'!important;
+    content: '\f0d9' !important;
     //display: none;
   }
-  
-  ::ng-deep .navbar-header,::ng-deep .top-left {
-    height: 100%!important;
+
+  ::ng-deep .navbar-header,
+  ::ng-deep .top-left {
+    height: 100% !important;
   }
   ::ng-deep .dropdown-toggle::before {
-    display: block!important;
+    display: block !important;
   }
 
   ::ng-deep .CustomerPanel {
+    transition: 2s;
     -webkit-box-shadow: 18px -11px 22px -14px rgba(0, 0, 0, 0.75) !important;
     -moz-box-shadow: 18px -11px 22px -14px rgba(0, 0, 0, 0.75) !important;
     box-shadow: 18px -11px 22px -14px rgba(0, 0, 0, 0.75) !important;
   }
-
-
-
-
-
-
 }
 
-
-@media (max-width:425px) {
-  ::ng-deep .ForCustomer  {
-  
-    width: 290px!important;
+@media (max-width: 425px) {
+  ::ng-deep .left-panel {
+    width: auto !important;
+    max-width: 290px;
+    transition: 2s;
+  }
+  ::ng-deep .ForCustomer {
+    width: 290px !important;
   }
   ::ng-deep .OpenRight .SlideButton.active {
     left: 290px !important;

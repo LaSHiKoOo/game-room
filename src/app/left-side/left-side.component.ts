@@ -1,14 +1,13 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: "app-left-side",
-  templateUrl: "./left-side.component.html",
-  styleUrls: ["./left-side.component.scss"]
+  selector: 'app-left-side',
+  templateUrl: './left-side.component.html',
+  styleUrls: ['./left-side.component.scss']
 })
 export class LeftSideComponent implements OnInit {
   data: any;
 
- 
   @Input() set appData(val: any) {
     this.data = val;
   }
@@ -22,9 +21,8 @@ export class LeftSideComponent implements OnInit {
   }
 
   CustmerMenuToggle() {
-    document.getElementById("left-panel").classList.toggle("OpenRight");
-    //document.getElementsByClassName('fas')[0].classList.remove("fa-caret-right");
-    document.getElementsByClassName('fas')[0].classList.toggle("fa-caret-left");
-    
+    document.getElementById('left-panel').classList.toggle('OpenRight');
+    // document.getElementsByClassName('fas')[0].classList.remove("fa-caret-right");
+    document.getElementsByClassName('fas')[0].classList.toggle('fa-caret-left');
   }
 }

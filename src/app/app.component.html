@@ -1,3 +1,8 @@
 <app-left-side [appData]="data"></app-left-side>
 <app-right-side [appData]="data"></app-right-side>
 <!-- <app-start-page></app-start-page> -->
+<app-modal-box
+  (closeModal)="resetModal($event)"
+  [modalContent]="modalParams"
+  *ngIf="currentModal !== ''"
+></app-modal-box>

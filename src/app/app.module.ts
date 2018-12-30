@@ -31,6 +31,8 @@ import { TimerComponent } from './components/timer/timer.component';
 import { SelectBoxComponent } from './components/select-box/select-box.component';
 import { SingleComputerComponent } from './single-computer/single-computer.component';
 import { ShopFridgeComponent } from './shop-fridge/shop-fridge.component';
+import { ModalBoxComponent } from './modal-box/modal-box.component';
+import { ConfirmModalComponent } from './modal-box/confirm-modal/confirm-modal.component';
 
 
 @NgModule({
@@ -63,7 +65,9 @@ import { ShopFridgeComponent } from './shop-fridge/shop-fridge.component';
     TimerComponent,
     SelectBoxComponent,
     SingleComputerComponent,
-    ShopFridgeComponent
+    ShopFridgeComponent,
+    ModalBoxComponent,
+    ConfirmModalComponent
   ],
   imports: [
     BrowserModule

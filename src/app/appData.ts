@@ -1,56 +1,57 @@
 export default class AppData {
   data: any = {
-    userStatus: "customer",
-    gameState: "home",
-    iconColors: ["red", "blue", "green", "yellow"],
-    iconList: ["pe-7s-cash", "pe-7s-cart", "pe-7s-browser", "pe-7s-users"],
-    currency: "₾",
-    titleList: ["Revenue", "Sales", "Templates", "Clients"],
+    currentModal: '',
+    userStatus: 'customer',
+    gameState: 'home',
+    iconColors: ['red', 'blue', 'green', 'yellow'],
+    iconList: ['pe-7s-cash', 'pe-7s-cart', 'pe-7s-browser', 'pe-7s-users'],
+    currency: '₾',
+    titleList: ['Revenue', 'Sales', 'Templates', 'Clients'],
     valueList: [23569, 34355, 3468, 2968],
     tableContent: [
       {
         id: 5634,
-        name: "Don Kote",
-        product: "iStore",
+        name: 'Don Kote',
+        product: 'iStore',
         quantity: 123,
-        status: "complete"
+        status: 'complete'
       },
       {
         id: 5634,
-        name: "Don Zauri",
-        product: "iStore",
+        name: 'Don Zauri',
+        product: 'iStore',
         quantity: 123,
-        status: "pending"
+        status: 'pending'
       },
       {
         id: 5634,
-        name: "Don Vito",
-        product: "iStore",
+        name: 'Don Vito',
+        product: 'iStore',
         quantity: 123,
-        status: "complete"
+        status: 'complete'
       },
       {
         id: 5634,
-        name: "Don Elguja",
-        product: "iStore",
+        name: 'Don Elguja',
+        product: 'iStore',
         quantity: 123,
-        status: "pending"
+        status: 'pending'
       },
       {
         id: 5634,
-        name: "Don Mamazagli",
-        product: "iStore",
+        name: 'Don Mamazagli',
+        product: 'iStore',
         quantity: 123,
-        status: "complete"
+        status: 'complete'
       }
     ],
-    tableHeading: "თანამშრომელთა სია",
+    tableHeading: 'თანამშრომელთა სია',
     computers: [
       {
         id: 1,
-        name: "Standart Console",
-        type: "standart",
-        state: "free",
+        name: 'Standart Console',
+        type: 'standart',
+        state: 'free',
         users: 0,
         maxUsers: 4,
         maxTime: 0,
@@ -61,9 +62,9 @@ export default class AppData {
       },
       {
         id: 2,
-        name: "Standart Console",
-        type: "standart",
-        state: "free",
+        name: 'Standart Console',
+        type: 'standart',
+        state: 'free',
         users: 0,
         maxUsers: 4,
         maxTime: 0,
@@ -74,9 +75,9 @@ export default class AppData {
       },
       {
         id: 3,
-        name: "Standart Console",
-        type: "standart",
-        state: "free",
+        name: 'Standart Console',
+        type: 'standart',
+        state: 'free',
         users: 0,
         maxUsers: 4,
         maxTime: 0,
@@ -87,9 +88,9 @@ export default class AppData {
       },
       {
         id: 4,
-        name: "Standart Console",
-        type: "standart",
-        state: "free",
+        name: 'Standart Console',
+        type: 'standart',
+        state: 'free',
         users: 0,
         maxUsers: 4,
         maxTime: 0,
@@ -100,9 +101,9 @@ export default class AppData {
       },
       {
         id: 5,
-        name: "Standart Console",
-        type: "standart",
-        state: "free",
+        name: 'Standart Console',
+        type: 'standart',
+        state: 'free',
         users: 0,
         maxUsers: 4,
         maxTime: 0,
@@ -113,9 +114,9 @@ export default class AppData {
       },
       {
         id: 6,
-        name: "Standart Console",
-        type: "standart",
-        state: "free",
+        name: 'Standart Console',
+        type: 'standart',
+        state: 'free',
         users: 0,
         maxUsers: 4,
         maxTime: 0,
@@ -126,9 +127,9 @@ export default class AppData {
       },
       {
         id: 7,
-        name: "VIP Console",
-        type: "vip",
-        state: "free",
+        name: 'VIP Console',
+        type: 'vip',
+        state: 'free',
         users: 0,
         maxUsers: 4,
         maxTime: 0,
@@ -139,9 +140,9 @@ export default class AppData {
       },
       {
         id: 8,
-        name: "VIP Console",
-        type: "vip",
-        state: "free",
+        name: 'VIP Console',
+        type: 'vip',
+        state: 'free',
         users: 0,
         maxUsers: 4,
         maxTime: 0,
@@ -152,9 +153,9 @@ export default class AppData {
       },
       {
         id: 9,
-        name: "Standart Console",
-        type: "standart",
-        state: "free",
+        name: 'Standart Console',
+        type: 'standart',
+        state: 'free',
         users: 0,
         maxUsers: 4,
         maxTime: 0,
@@ -165,22 +166,60 @@ export default class AppData {
       }
     ],
     controllers: [
-      { value: 1, name: "1 ჯოისტიკი" },
-      { value: 2, name: "2 ჯოისტიკი" },
-      { value: 3, name: "3 ჯოისტიკი" },
-      { value: 4, name: "4 ჯოისტიკი" }
+      { value: 1, name: '1 ჯოისტიკი' },
+      { value: 2, name: '2 ჯოისტიკი' },
+      { value: 3, name: '3 ჯოისტიკი' },
+      { value: 4, name: '4 ჯოისტიკი' }
     ],
     time: [
-      { value: 0, name: "მიმდინარე" },
-      { value: 5, name: "ნახ. საათი" },
-      { value: 1, name: "1 საათი" },
-      { value: 2, name: "2 საათი" },
-      { value: 3, name: "3 საათი" }
-    ]
+      { value: 0, name: 'მიმდინარე' },
+      { value: 5, name: 'ნახ. საათი' },
+      { value: 1, name: '1 საათი' },
+      { value: 2, name: '2 საათი' },
+      { value: 3, name: '3 საათი' }
+    ],
+    shopContent: [
+      {
+        item: 'Coca-Cola',
+        quantity: 15,
+        price: 1.3
+      },
+      {
+        item: 'Fanta',
+        quantity: 4,
+        price: 1.3
+      },
+      {
+        item: 'Fuse Tea',
+        quantity: 8,
+        price: 2.0
+      },
+      {
+        item: 'Sprite',
+        quantity: 5,
+        price: 1.3
+      }
+    ],
+    modalParams: {
+      confirmSaleModal: {
+        type: 'shopModal',
+        name: 'Confirm Sale',
+        buttons: [
+          {
+            text: 'დახურვა',
+            type: 'decline'
+          },
+          {
+            text: 'დადასტურება',
+            type: 'accept'
+          }
+        ],
+        info: []
+      }
+    }
   };
 
   changeState(val: string): void {
-    console.log(val);
     this.data.gameState = val;
   }
 }
