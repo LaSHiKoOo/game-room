@@ -6,8 +6,31 @@ export default class AppData {
     iconColors: ['red', 'blue', 'green', 'yellow'],
     iconList: ['pe-7s-cash', 'pe-7s-cart', 'pe-7s-browser', 'pe-7s-users'],
     currency: '₾',
-    titleList: ['Revenue', 'Sales', 'Templates', 'Clients'],
+    titleList: [
+      'Revenue',
+      'მაღაზიის საერთო შემოსავალი',
+      'კონსოლების საერთო შემოსავალი',
+      'Clients'
+    ],
     valueList: [23569, 34355, 3468, 2968],
+    WidgetContent: [
+      {
+        id: 'shop',
+        iconClass: 'pe-7s-cart',
+        color: '#0000ff',
+        currency: '₾',
+        title: 'მაღაზიის შემოსავალი',
+        value: 0
+      },
+      {
+        id: 'console',
+        iconClass: 'pe-7s-monitor',
+        color: '#00ff00',
+        currency: '₾',
+        title: 'კონსოლების შემოსავალი',
+        value: 0
+      }
+    ],
     tableContent: [
       {
         id: 5634,
@@ -221,5 +244,13 @@ export default class AppData {
 
   changeState(val: string): void {
     this.data.gameState = val;
+  }
+  increaseValue(id: string, value: number): void {
+    this.data.WidgetContent.forEach(widget => {
+      if (widget.id === id) {
+        widget.value = value;
+      }
+    });
+    console.warn(this.data.WidgetContent);
   }
 }

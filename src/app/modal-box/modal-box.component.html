@@ -8,6 +8,7 @@
       *ngIf="modalContent.type === 'shopModal'"
       [modalContent]="modalContent"
       (closeModal)="closeModal.emit($event)"
+      (sellItems)="sellItems.emit($event)"
     ></app-confirm-modal>
   </div>
 </div>

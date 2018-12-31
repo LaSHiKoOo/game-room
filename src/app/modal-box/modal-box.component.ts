@@ -8,6 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class ModalBoxComponent implements OnInit {
   @Input() modalContent;
   @Output() closeModal = new EventEmitter<string>();
+  @Output() sellItems = new EventEmitter<number>();
   constructor() {}
 
   ngOnInit() {}

@@ -3,6 +3,7 @@
 <!-- <app-start-page></app-start-page> -->
 <app-modal-box
   (closeModal)="resetModal($event)"
+  (sellItems)="confirmSell('shop', $event)"
   [modalContent]="modalParams"
   *ngIf="currentModal !== ''"
 ></app-modal-box>

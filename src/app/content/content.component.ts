@@ -13,9 +13,9 @@ export class ContentComponent implements OnInit {
     this.data = val;
   }
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() { }
+  ngOnInit() {}
 
   get state() {
     return this.data.gameState;
@@ -27,33 +27,24 @@ export class ContentComponent implements OnInit {
   get tableHeading() {
     return this.data.data.tableHeading;
   }
-  get iconList() {
-    return this.data.data.iconList;
-  }
-  get iconColors() {
-    return this.data.data.iconColors;
-  }
-  get currency() {
-    return this.data.data.currency;
-  }
-  get titleList() {
-    return this.data.data.titleList;
-  }
-  get valueList() {
-    return this.data.data.valueList;
-  }
   get computers() {
     return this.data.data.computers;
   }
 
+  get WidgetContent() {
+    return this.data.data.WidgetContent;
+  }
+
   startTime(computer, ev) {
     switch (ev.controllers) {
-      case 1: case 2: {
+      case 1:
+      case 2: {
         computer.currentPrice = computer.defaultPrice;
         break;
       }
       case 3: {
-        computer.currentPrice = computer.defaultPrice + (computer.defaultPrice / 2);
+        computer.currentPrice =
+          computer.defaultPrice + computer.defaultPrice / 2;
         break;
       }
       case 4: {

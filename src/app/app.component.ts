@@ -13,6 +13,10 @@ export class AppComponent {
   resetModal(ev) {
     this.data.data.currentModal = ev;
   }
+  confirmSell(id, ev) {
+    this.data.increaseValue(id, ev);
+    this.resetModal('');
+  }
 
   get currentModal() {
     return this.data.data.currentModal;

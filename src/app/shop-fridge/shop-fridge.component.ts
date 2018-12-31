@@ -49,7 +49,6 @@ export class ShopFridgeComponent implements OnInit {
     this.data.data.modalParams[this.data.data.currentModal].info.push(
       this.shopContent
     );
-    console.log(this.shopContent);
   }
 
   getMax(val) {

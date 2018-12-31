@@ -6,32 +6,20 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./white-widget.component.scss']
 })
 export class WhiteWidgetComponent implements OnInit {
-
   iconClass = '';
   iconColor = '';
   currency = '';
   title = '';
   value = 0;
+  widget: any;
 
+  @Input() set widgetContent(val: any) {
+    this.widget = val;
+  }
+  get widgetValue() {
+    return this.widget.value;
+  }
+  constructor() {}
 
-  @Input() set widgetIcon(val: string) {
-    this.iconClass = val;
-  }
-  @Input() set widgetColor(val: string) {
-    this.iconColor = val;
-  }
-  @Input() set widgetCurrency(val: string) {
-    this.currency = val;
-  }
-  @Input() set widgetTitle(val: string) {
-    this.title = val;
-  }
-  @Input() set widgetValue(val: number) {
-    this.value = val;
-  }
-
-  constructor() { }
-
-  ngOnInit() { }
-
+  ngOnInit() {}
 }

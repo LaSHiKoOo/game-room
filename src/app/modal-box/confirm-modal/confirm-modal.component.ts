@@ -11,6 +11,7 @@ export class ConfirmModalComponent implements OnInit {
   tmpItemsList = [];
 
   @Input() modalContent;
+  @Output() sellItems = new EventEmitter<number>();
   @Output() closeModal = new EventEmitter<string>();
 
   constructor() {}
@@ -52,7 +53,7 @@ export class ConfirmModalComponent implements OnInit {
             }
           }
         }
-        this.closeModal.emit('');
+        this.sellItems.emit(this.fullPrice);
         break;
       }
       case 'decline': {
