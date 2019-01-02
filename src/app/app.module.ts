@@ -33,6 +33,7 @@ import { SingleComputerComponent } from './single-computer/single-computer.compo
 import { ShopFridgeComponent } from './shop-fridge/shop-fridge.component';
 import { ModalBoxComponent } from './modal-box/modal-box.component';
 import { ConfirmModalComponent } from './modal-box/confirm-modal/confirm-modal.component';
+import { StopTimeComponent } from './modal-box/stop-time/stop-time.component';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { ConfirmModalComponent } from './modal-box/confirm-modal/confirm-modal.c
     SingleComputerComponent,
     ShopFridgeComponent,
     ModalBoxComponent,
-    ConfirmModalComponent
+    ConfirmModalComponent,
+    StopTimeComponent
   ],
   imports: [
     BrowserModule

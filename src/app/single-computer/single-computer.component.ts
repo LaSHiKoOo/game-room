@@ -6,15 +6,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./single-computer.component.scss']
 })
 export class SingleComputerComponent implements OnInit {
-
-  selectedValue = 'label';
-  otherValues = [
-    'label1', 'label2', 'label3'
-  ];
   computerName = '';
   computerID = 0;
   computerState = 'free';
   computerType = 'standart';
+  computerPrice = 0;
+  currentCost: any = 0;
+  crtTime: any = 0;
 
   timeSettings = {
     controllers: 0,
@@ -22,12 +20,17 @@ export class SingleComputerComponent implements OnInit {
   };
 
   @Input() data;
+  @Input() computer;
   @Input() currentTime;
   @Input() maxTime;
   @Input() fixedTime;
+  @Input() timerActive;
 
   @Input() set name(value: string) {
     this.computerName = value;
+  }
+  @Input() set price(value: number) {
+    this.computerPrice = value;
   }
   @Input() set id(value: number) {
     this.computerID = value;
@@ -41,11 +44,9 @@ export class SingleComputerComponent implements OnInit {
 
   @Output() start = new EventEmitter<any>();
 
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   setSettings(msg: string, ev: any) {
     switch (msg) {
@@ -59,8 +60,44 @@ export class SingleComputerComponent implements OnInit {
       }
     }
   }
+
+  newTime(ev) {
+    switch (this.maxTime) {
+      case 0: {
+        this.crtTime = ev;
+        this.currentCost = parseFloat(
+          ((ev / 3600) * this.computerPrice).toString()
+        ).toFixed(2);
+        break;
+      }
+      default: {
+        const newTime = this.maxTime - ev;
+        this.currentCost = parseFloat(
+          ((newTime / 3600) * this.computerPrice).toString()
+        ).toFixed(2);
+        break;
+      }
+    }
+  }
   startTime() {
     this.start.emit(this.timeSettings);
+  }
+  stopTimer() {
+    this.computer.timerActive = false;
+    const item = {
+      time: '',
+      cost: ''
+    };
+    item.time = this.crtTime;
+    item.cost = parseFloat(
+      ((this.crtTime / 3600) * this.computerPrice).toString()
+    ).toFixed(2);
+    this.data.data.currentModal = 'stopTimerModal';
+    this.data.data.modalParams[this.data.data.currentModal].info = [];
+    this.data.data.modalParams[this.data.data.currentModal].info.push(item);
+    this.data.data.modalParams[this.data.data.currentModal].info.push(
+      this.computer
+    );
   }
 
   get controllers() {
@@ -69,5 +106,4 @@ export class SingleComputerComponent implements OnInit {
   get time() {
     return this.data.data.time;
   }
-
 }

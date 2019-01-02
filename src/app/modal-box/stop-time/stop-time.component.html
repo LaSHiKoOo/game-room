@@ -1,0 +1,28 @@
+<div class="confirmBody">
+  <div class="topContainer">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let computer of computers">
+          <td>{{ displayTime(computer.time) }} წთ.</td>
+          <td>{{ computer.cost }} ₾</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="priceContainer">{{ computerName }}</div>
+  <div class="bottomContainer">
+    <div class="singleBtn" *ngFor="let btn of modalContent.buttons">
+      <app-button
+        class="customBtn"
+        [ngClass]="{
+          primary: btn.type === 'accept',
+          secondary: btn.type === 'decline'
+        }"
+        [value]="btn.text"
+        width="100"
+        height="35"
+        (click)="doAction(btn.type)"
+      ></app-button>
+    </div>
+  </div>
+</div>

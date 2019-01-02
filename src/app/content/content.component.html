@@ -11,13 +11,16 @@
       <div class="col-md-4" *ngFor="let computer of computers">
         <app-single-computer
           [data]="data"
+          [computer]="computer"
           [name]="computer.name"
+          [price]="computer.currentPrice"
           [id]="computer.id"
           [state]="computer.state"
           [type]="computer.type"
           [currentTime]="computer.currentTime"
           [maxTime]="computer.maxTime"
           [fixedTime]="computer.fixedTime"
+          [timerActive]="computer.timerActive"
           (start)="startTime(computer, $event)"
         ></app-single-computer>
       </div>

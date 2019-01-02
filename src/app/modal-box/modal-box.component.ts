@@ -9,6 +9,7 @@ export class ModalBoxComponent implements OnInit {
   @Input() modalContent;
   @Output() closeModal = new EventEmitter<string>();
   @Output() sellItems = new EventEmitter<number>();
+  @Output() stopTimer = new EventEmitter<number>();
   constructor() {}
 
   ngOnInit() {}

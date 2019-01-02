@@ -65,6 +65,5 @@ export class ContentComponent implements OnInit {
       computer.maxTime = ev.time * 3600;
     }
     computer.state = 'busy';
-    console.log(computer);
   }
 }

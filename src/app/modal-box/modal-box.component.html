@@ -10,5 +10,11 @@
       (closeModal)="closeModal.emit($event)"
       (sellItems)="sellItems.emit($event)"
     ></app-confirm-modal>
+    <app-stop-time
+      *ngIf="modalContent.type === 'timeModal'"
+      [modalContent]="modalContent"
+      (closeModal)="closeModal.emit($event)"
+      (stopTimer)="stopTimer.emit($event)"
+    ></app-stop-time>
   </div>
 </div>

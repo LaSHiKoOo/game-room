@@ -37,19 +37,31 @@
         minTime="10"
         [time]="currentTime"
         [maxTime]="maxTime"
-        timerActive="true"
+        [timerActive]="timerActive"
         [fixedTime]="fixedTime"
+        (currTime)="newTime($event)"
       ></app-timer>
-      <span>ჯამური თანხა: 5₾</span>
+      <span
+        >ჯამური თანხა: <span> {{ currentCost }} </span> ₾</span
+      >
     </div>
   </div>
-  <div class="btmContainer">
+  <div class="btmContainer" *ngIf="computerState !== 'busy'">
     <app-button
-      class="customBtn"
-      value="დაწყება"
+      class="customBtn primary"
+      value="ჩართვა"
       width="100"
       height="35"
       (click)="startTime()"
+    ></app-button>
+  </div>
+  <div class="btmContainer" *ngIf="computerState === 'busy'">
+    <app-button
+      class="customBtn secondary"
+      value="გამორთვა"
+      width="100"
+      height="35"
+      (click)="stopTimer()"
     ></app-button>
   </div>
 </div>

@@ -3,16 +3,6 @@ export default class AppData {
     currentModal: '',
     userStatus: 'customer',
     gameState: 'home',
-    iconColors: ['red', 'blue', 'green', 'yellow'],
-    iconList: ['pe-7s-cash', 'pe-7s-cart', 'pe-7s-browser', 'pe-7s-users'],
-    currency: '₾',
-    titleList: [
-      'Revenue',
-      'მაღაზიის საერთო შემოსავალი',
-      'კონსოლების საერთო შემოსავალი',
-      'Clients'
-    ],
-    valueList: [23569, 34355, 3468, 2968],
     WidgetContent: [
       {
         id: 'shop',
@@ -80,6 +70,7 @@ export default class AppData {
         maxTime: 0,
         currentTime: 0,
         fixedTime: true,
+        timerActive: true,
         defaultPrice: 4,
         currentPrice: 8
       },
@@ -93,6 +84,7 @@ export default class AppData {
         maxTime: 0,
         currentTime: 0,
         fixedTime: true,
+        timerActive: true,
         defaultPrice: 4,
         currentPrice: 8
       },
@@ -106,6 +98,7 @@ export default class AppData {
         maxTime: 0,
         currentTime: 0,
         fixedTime: true,
+        timerActive: true,
         defaultPrice: 4,
         currentPrice: 8
       },
@@ -119,6 +112,7 @@ export default class AppData {
         maxTime: 0,
         currentTime: 0,
         fixedTime: true,
+        timerActive: true,
         defaultPrice: 4,
         currentPrice: 8
       },
@@ -132,6 +126,7 @@ export default class AppData {
         maxTime: 0,
         currentTime: 0,
         fixedTime: true,
+        timerActive: true,
         defaultPrice: 4,
         currentPrice: 8
       },
@@ -145,6 +140,7 @@ export default class AppData {
         maxTime: 0,
         currentTime: 0,
         fixedTime: true,
+        timerActive: true,
         defaultPrice: 4,
         currentPrice: 8
       },
@@ -158,6 +154,7 @@ export default class AppData {
         maxTime: 0,
         currentTime: 0,
         fixedTime: true,
+        timerActive: true,
         defaultPrice: 8,
         currentPrice: 8
       },
@@ -171,6 +168,7 @@ export default class AppData {
         maxTime: 0,
         currentTime: 0,
         fixedTime: true,
+        timerActive: true,
         defaultPrice: 8,
         currentPrice: 8
       },
@@ -184,6 +182,7 @@ export default class AppData {
         maxTime: 0,
         currentTime: 0,
         fixedTime: true,
+        timerActive: true,
         defaultPrice: 4,
         currentPrice: 8
       }
@@ -238,6 +237,21 @@ export default class AppData {
           }
         ],
         info: []
+      },
+      stopTimerModal: {
+        type: 'timeModal',
+        name: 'Stop Timer',
+        buttons: [
+          {
+            text: 'დახურვა',
+            type: 'decline'
+          },
+          {
+            text: 'დადასტურება',
+            type: 'accept'
+          }
+        ],
+        info: []
       }
     }
   };
@@ -245,12 +259,12 @@ export default class AppData {
   changeState(val: string): void {
     this.data.gameState = val;
   }
+
   increaseValue(id: string, value: number): void {
     this.data.WidgetContent.forEach(widget => {
       if (widget.id === id) {
         widget.value = value;
       }
     });
-    console.warn(this.data.WidgetContent);
   }
 }

@@ -71,16 +71,30 @@
     }
     .timerContainer {
       span {
-        font-size: 11px;
+        font-size: 13px;
+        span {
+          font-size: 15px;
+          color: red;
+        }
       }
     }
   }
   .btmContainer {
     .customBtn {
-      ::ng-deep .btn {
-        background: #00585f !important;
-        &:hover {
-          background: #10797f !important;
+      &.primary {
+        ::ng-deep .btn {
+          background: #00585f !important;
+          &:hover {
+            background: #10797f !important;
+          }
+        }
+      }
+      &.secondary {
+        ::ng-deep .btn {
+          background: #dd2d2d !important;
+          &:hover {
+            background: #dd4b4b !important;
+          }
         }
       }
     }

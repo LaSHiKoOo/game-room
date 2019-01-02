@@ -41,7 +41,6 @@ export class ShopFridgeComponent implements OnInit {
   }
 
   confirmSell() {
-    console.log(this.itemsToSale);
     this.data.data.currentModal = 'confirmSaleModal';
     this.data.data.modalParams[this.data.data.currentModal].info.push(
       this.itemsToSale
