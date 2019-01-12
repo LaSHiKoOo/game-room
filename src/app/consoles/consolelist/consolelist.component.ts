@@ -6,95 +6,65 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consolelist.component.scss']
 })
 export class consolelistComponent implements OnInit {
-
+  tableColumns = ['#', 'Icon', 'ID', ' სახელი', 'ფასი', 'სტატუსი'];
   tableContent = [
     {
       id: 5634,
-      name: 'Don Koteeee',
-      product: 'ხინკალი',
-      quantity: 30,
+      name: 'კონსოლი 1',
+      product: '4',
       danger: false,
-      status: 'მარაგშია'
+      class: 'badge badge-complete',
+      status: 'სტანდარტი'
     },
     {
       id: 5634,
-      name: 'Don Zauri',
-      product: 'ხინკალი',
-      quantity: 30,
+      name: 'კონსოლი 2',
+      product: '4',
       danger: false,
-      status: 'მთავრდება'
+      class: 'badge badge-complete',
+      status: 'სტანდარტი'
     },
     {
       id: 5634,
-      name: 'Don Vito',
-      product: 'ხინკალი',
-      quantity: 3,
+      name: 'სურაკასტრა',
+      product: '8',
       danger: true,
-      status: 'მარაგშია'
+      class: 'badge badge-pending',
+      status: 'VIP'
     },
     {
       id: 5634,
       name: 'Don Elguja',
-      product: 'ხინკალი',
-      quantity: 10,
+      product: '4',
       danger: true,
-      status: 'მთავრდება'
+      class: 'badge badge-complete',
+      status: 'სტანდარტი'
     },
     {
       id: 5634,
       name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
+      product: '8',
+      class: 'badge badge-pending',
       danger: false,
-      status: 'მარაგშია'
+      status: 'VIP'
+      
+    },
+    
+    {
+      id: 5634,
+      name: 'Don პუfი',
+      product: '4',
+      danger: false,
+      class: 'badge badge-complete',
+      status: 'სტანდარტი'
     },
     {
       id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
+      name: 'პეპელა',
+      product: '2',
       danger: false,
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      status: 'მარაგშია'
+      class: 'badge badge-complete',
+      status: 'სტანდარტი'
     }
   ];
 

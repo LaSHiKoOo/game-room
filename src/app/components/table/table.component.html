@@ -36,9 +36,10 @@
               <span class="name">{{ item.name }}</span>
             </td>
             <td>
-              <span class="product">{{ item.product }}</span>
+              <span class="product" *ngIf="item.product">{{ item.product }}</span>
+              <span class="product" *ngIf="item.price">{{ item.price }}</span>
             </td>
-            <td>
+            <td *ngIf="item.quantity>-1">
               <span class="count">{{ item.quantity }}</span>
             </td>
             <td>

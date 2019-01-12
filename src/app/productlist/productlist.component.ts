@@ -11,101 +11,38 @@ export class ProductlistComponent implements OnInit {
     {
       id: 5634,
       name: 'კოკა კოლა',
-      product: 1.3,
+      price: 1.3,
       quantity: 30,
       danger: false,
       class: 'badge badge-complete',
       status: 'მარაგშია'
     },
     {
-      id: 5634,
-      name: 'Don Zauri',
-      product: 'ხინკალი',
+      id: 5635,
+      name: 'არსი კოლა',
+      price: 1.2,
       quantity: 30,
       danger: false,
-      class: 'badge badge-danger',
-      status: 'ამოიწურა'
+      class: 'badge badge-complete',
+      status: 'მარაგშია'
     },
     {
-      id: 5634,
-      name: 'Don Vito',
-      product: 'ხინკალი',
-      quantity: 3,
+      id: 5636,
+      name: 'ფანტა ლიმონის',
+      price: 1.1,
+      quantity: 30,
+      danger: true,
+      class: 'badge badge-complete',
+      status: 'მარაგშია'
+    },
+    {
+      id: 5638,
+      name: 'პეპსი',
+      price: '1.0',
+      quantity: 0,
       danger: true,
       class: 'badge badge-danger',
       status: 'ამოიწურა'
-    },
-    {
-      id: 5634,
-      name: 'Don Elguja',
-      product: 'ხინკალი',
-      quantity: 10,
-      danger: true,
-      class: 'badge badge-danger',
-      status: 'ამოიწურა'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      class: 'badge badge-complete',
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      class: 'badge badge-complete',
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      class: 'badge badge-complete',
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      class: 'badge badge-complete',
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      class: 'badge badge-complete',
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      class: 'badge badge-complete',
-      status: 'მარაგშია'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'ხინკალი',
-      quantity: 30,
-      danger: false,
-      class: 'badge badge-complete',
-      status: 'მარაგშია'
     }
   ];
 
