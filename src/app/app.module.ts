@@ -12,7 +12,7 @@ import { TableComponent } from './components/table/table.component';
 import { productTableComponent } from './components/productTable/table.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { EmployerlistComponent } from './employerlist/employerlist.component';
-import { productlistComponent } from './productlist/productlist.component';
+import { ProductlistComponent } from './productlist/productlist.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegisterEmployeComponent } from './register-employe/register-employe.component';
 import { RegisterProductComponent } from './register-product/register-product.component';
@@ -35,7 +35,6 @@ import { ModalBoxComponent } from './modal-box/modal-box.component';
 import { ConfirmModalComponent } from './modal-box/confirm-modal/confirm-modal.component';
 import { StopTimeComponent } from './modal-box/stop-time/stop-time.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +50,7 @@ import { StopTimeComponent } from './modal-box/stop-time/stop-time.component';
     FooterComponent,
     RegisterEmployeComponent,
     ContentComponent,
-    productlistComponent,
+    ProductlistComponent,
     productTableComponent,
     RegisterProductComponent,
     promolistComponent,
@@ -71,10 +70,8 @@ import { StopTimeComponent } from './modal-box/stop-time/stop-time.component';
     ConfirmModalComponent,
     StopTimeComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

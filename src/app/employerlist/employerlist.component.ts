@@ -6,93 +6,45 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employerlist.component.scss']
 })
 export class EmployerlistComponent implements OnInit {
-
+  tableColumns = ['#', 'Avatar', 'ID', 'სახელი', 'გვარი', 'დღე', 'სტატუსი'];
   tableContent = [
     {
-      id: 5634,
-      name: 'Don Kote',
-      product: 'iStore',
-      quantity: 123,
-      status: 'complete'
+      id: 123,
+      name: 'სახელი',
+      product: 'გვარი',
+      quantity: 11,
+      class: 'badge badge-complete',
+      status: 'working'
     },
     {
-      id: 5634,
-      name: 'Don Zauri',
-      product: 'iStore',
-      quantity: 123,
-      status: 'pending'
+      id: 123,
+      name: 'სახელი',
+      product: 'გვარი',
+      quantity: 11,
+      class: 'badge badge-pending',
+      status: 'not working'
     },
     {
-      id: 5634,
-      name: 'Don Vito',
-      product: 'iStore',
-      quantity: 123,
-      status: 'complete'
+      id: 123,
+      name: 'სახელი',
+      product: 'გვარი',
+      quantity: 11,
+      class: 'badge badge-complete',
+      status: 'working'
     },
     {
-      id: 5634,
-      name: 'Don Elguja',
-      product: 'iStore',
-      quantity: 123,
-      status: 'pending'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'iStore',
-      quantity: 123,
-      status: 'complete'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'iStore',
-      quantity: 123,
-      status: 'complete'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'iStore',
-      quantity: 123,
-      status: 'complete'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'iStore',
-      quantity: 123,
-      status: 'complete'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'iStore',
-      quantity: 123,
-      status: 'complete'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'iStore',
-      quantity: 123,
-      status: 'complete'
-    },
-    {
-      id: 5634,
-      name: 'Don Mamazagli',
-      product: 'iStore',
-      quantity: 123,
-      status: 'complete'
+      id: 123,
+      name: 'სახელი',
+      product: 'გვარი',
+      quantity: 11,
+      class: 'badge badge-complete',
+      status: 'working'
     }
   ];
 
   tableHeading = 'თანამშრომელთა სია';
 
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

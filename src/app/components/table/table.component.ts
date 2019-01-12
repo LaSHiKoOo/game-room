@@ -6,21 +6,21 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
-
   data: any;
+  columns: any;
   title: string;
-
 
   @Input() set tableHeading(val: any) {
     this.title = val;
+  }
+  @Input() set tableColumns(val: any) {
+    this.columns = val;
   }
   @Input() set tableData(vals: any) {
     this.data = vals;
   }
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

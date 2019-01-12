@@ -5,15 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './productlist.component.html',
   styleUrls: ['./productlist.component.scss']
 })
-export class productlistComponent implements OnInit {
-
+export class ProductlistComponent implements OnInit {
+  tableColumns = ['#', 'Icon', 'ID', 'სახელი', 'ფასი', 'რაოდენობა', 'სტატუსი'];
   tableContent = [
     {
       id: 5634,
-      name: 'Don Koteeee',
-      product: 'ხინკალი',
+      name: 'კოკა კოლა',
+      product: 1.3,
       quantity: 30,
       danger: false,
+      class: 'badge badge-complete',
       status: 'მარაგშია'
     },
     {
@@ -22,7 +23,8 @@ export class productlistComponent implements OnInit {
       product: 'ხინკალი',
       quantity: 30,
       danger: false,
-      status: 'მთავრდება'
+      class: 'badge badge-danger',
+      status: 'ამოიწურა'
     },
     {
       id: 5634,
@@ -30,7 +32,8 @@ export class productlistComponent implements OnInit {
       product: 'ხინკალი',
       quantity: 3,
       danger: true,
-      status: 'მარაგშია'
+      class: 'badge badge-danger',
+      status: 'ამოიწურა'
     },
     {
       id: 5634,
@@ -38,7 +41,8 @@ export class productlistComponent implements OnInit {
       product: 'ხინკალი',
       quantity: 10,
       danger: true,
-      status: 'მთავრდება'
+      class: 'badge badge-danger',
+      status: 'ამოიწურა'
     },
     {
       id: 5634,
@@ -46,6 +50,7 @@ export class productlistComponent implements OnInit {
       product: 'ხინკალი',
       quantity: 30,
       danger: false,
+      class: 'badge badge-complete',
       status: 'მარაგშია'
     },
     {
@@ -54,6 +59,7 @@ export class productlistComponent implements OnInit {
       product: 'ხინკალი',
       quantity: 30,
       danger: false,
+      class: 'badge badge-complete',
       status: 'მარაგშია'
     },
     {
@@ -62,6 +68,7 @@ export class productlistComponent implements OnInit {
       product: 'ხინკალი',
       quantity: 30,
       danger: false,
+      class: 'badge badge-complete',
       status: 'მარაგშია'
     },
     {
@@ -70,6 +77,7 @@ export class productlistComponent implements OnInit {
       product: 'ხინკალი',
       quantity: 30,
       danger: false,
+      class: 'badge badge-complete',
       status: 'მარაგშია'
     },
     {
@@ -78,6 +86,7 @@ export class productlistComponent implements OnInit {
       product: 'ხინკალი',
       quantity: 30,
       danger: false,
+      class: 'badge badge-complete',
       status: 'მარაგშია'
     },
     {
@@ -86,6 +95,7 @@ export class productlistComponent implements OnInit {
       product: 'ხინკალი',
       quantity: 30,
       danger: false,
+      class: 'badge badge-complete',
       status: 'მარაგშია'
     },
     {
@@ -94,16 +104,14 @@ export class productlistComponent implements OnInit {
       product: 'ხინკალი',
       quantity: 30,
       danger: false,
+      class: 'badge badge-complete',
       status: 'მარაგშია'
     }
   ];
 
   tableHeading = 'თანამშრომელთა სია';
 
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

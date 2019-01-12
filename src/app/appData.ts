@@ -1,7 +1,7 @@
 export default class AppData {
   data: any = {
     currentModal: '',
-    userStatus: 'customer',
+    userStatus: 'admin',
     gameState: 'home',
     WidgetContent: [
       {
@@ -263,7 +263,7 @@ export default class AppData {
   increaseValue(id: string, value: number): void {
     this.data.WidgetContent.forEach(widget => {
       if (widget.id === id) {
-        widget.value = value;
+        widget.value += value;
       }
     });
   }
