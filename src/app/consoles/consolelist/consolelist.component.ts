@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './consolelist.component.html',
   styleUrls: ['./consolelist.component.scss']
 })
-export class consolelistComponent implements OnInit {
+export class ConsolelistComponent implements OnInit {
   tableColumns = ['#', 'Icon', 'ID', ' სახელი', 'ფასი', 'სტატუსი'];
   tableContent = [
     {
@@ -47,9 +47,8 @@ export class consolelistComponent implements OnInit {
       class: 'badge badge-pending',
       danger: false,
       status: 'VIP'
-      
     },
-    
+
     {
       id: 5634,
       name: 'Don პუfი',
@@ -70,10 +69,7 @@ export class consolelistComponent implements OnInit {
 
   tableHeading = 'კონსოლები';
 
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

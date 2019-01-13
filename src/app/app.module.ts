@@ -9,21 +9,17 @@ import { RightSideComponent } from './right-side/right-side.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { TableComponent } from './components/table/table.component';
-import { productTableComponent } from './components/productTable/table.component';
-import { CalendarComponent } from './components/calendar/calendar.component';
 import { EmployerlistComponent } from './employerlist/employerlist.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegisterEmployeComponent } from './register-employe/register-employe.component';
 import { RegisterProductComponent } from './register-product/register-product.component';
 import { ContentComponent } from './content/content.component';
-import { promolistComponent } from './promotions/promolist/promolist.component';
+import { PromolistComponent } from './promotions/promolist/promolist.component';
 import { RegisterPromoComponent } from './promotions/register-promo/register-promo.component';
-import { promoTableComponent } from './components/promoTable/table.component';
 import { EditPromoComponent } from './promotions/edit-promo/edit-promo.component';
 
-import { consoleTableComponent } from './components/consoleTable/table.component';
-import { consolelistComponent } from './consoles/consolelist/consolelist.component';
+import { ConsolelistComponent } from './consoles/consolelist/consolelist.component';
 import { RegisterConsoleComponent } from './consoles/register-console/register-console.component';
 import { EditConsoleComponent } from './consoles/edit-console/edit-console.component';
 import { ButtonComponent } from './components/button/button.component';
@@ -34,6 +30,7 @@ import { ShopFridgeComponent } from './shop-fridge/shop-fridge.component';
 import { ModalBoxComponent } from './modal-box/modal-box.component';
 import { ConfirmModalComponent } from './modal-box/confirm-modal/confirm-modal.component';
 import { StopTimeComponent } from './modal-box/stop-time/stop-time.component';
+import { SinglePromotionComponent } from './components/single-promotion/single-promotion.component';
 
 @NgModule({
   declarations: [
@@ -45,20 +42,16 @@ import { StopTimeComponent } from './modal-box/stop-time/stop-time.component';
     MenuComponent,
     StartPageComponent,
     TableComponent,
-    CalendarComponent,
     EmployerlistComponent,
     FooterComponent,
     RegisterEmployeComponent,
     ContentComponent,
     ProductlistComponent,
-    productTableComponent,
     RegisterProductComponent,
-    promolistComponent,
+    PromolistComponent,
     RegisterPromoComponent,
-    promoTableComponent,
     EditPromoComponent,
-    consoleTableComponent,
-    consolelistComponent,
+    ConsolelistComponent,
     RegisterConsoleComponent,
     EditConsoleComponent,
     ButtonComponent,
@@ -68,7 +61,8 @@ import { StopTimeComponent } from './modal-box/stop-time/stop-time.component';
     ShopFridgeComponent,
     ModalBoxComponent,
     ConfirmModalComponent,
-    StopTimeComponent
+    StopTimeComponent,
+    SinglePromotionComponent
   ],
   imports: [BrowserModule],
   providers: [],

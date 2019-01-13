@@ -4,7 +4,6 @@ import {
   ViewChild,
   ElementRef,
   Input,
-  ViewEncapsulation,
   Output,
   EventEmitter
 } from '@angular/core';

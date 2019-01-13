@@ -253,7 +253,37 @@ export default class AppData {
         ],
         info: []
       }
-    }
+    },
+    promotions: [
+      {
+        id: 1,
+        title: 'აქცია 2+1',
+        shortInfo: '2სთ. = 3სთ.',
+        consoles: ['კონსოლი 1', 'კონსოლი 2', 'კონსოლი 3'],
+        allTime: false,
+        allTimeText: 'უვადო',
+        dateFrom: '15 იანვ.',
+        dateTo: '15 თებ.',
+        price: 4,
+        currency: '₾',
+        fullInfo:
+          'აქციის ფარგლებში ყველა კომპიუტერზე 2 საათის ჩართვის შემთხვევაში მიიღებთ მესამე საათს უფასოდ.'
+      },
+      {
+        id: 2,
+        title: 'ღამის აქცია',
+        shortInfo: '1სთ. = 2₾',
+        consoles: ['კონსოლი 1', 'კონსოლი 2'],
+        allTime: true,
+        allTimeText: 'უვადო',
+        dateFrom: '',
+        dateTo: '',
+        price: 2,
+        currency: '₾',
+        fullInfo:
+          'ყოველდღე ღამის 1 საათის შემდეგ ყველა კომპიუტერზე გარდა VIP ტიპის კონსოლებისა 1 საათის ღირებულება არის 2₾.'
+      }
+    ]
   };
 
   changeState(val: string): void {
@@ -266,5 +296,11 @@ export default class AppData {
         widget.value += value;
       }
     });
+  }
+
+  removePromotion(id: number) {
+    this.data.promotions = this.data.promotions.filter(
+      promo => id !== promo.id
+    );
   }
 }

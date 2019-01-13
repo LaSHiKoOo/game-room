@@ -1,13 +1,10 @@
 <div class="container customContainer">
-    <div class="row">
-        <div class="col-xl-12">
-          
-          <app-promoTable
-
-            [tableHeading]="tableHeading"
-            [tableData]="tableContent"
-            
-          ></app-promoTable>
-        </div>
-      </div>
+  <div class="row">
+    <div class="col-xl-12" *ngFor="let promotion of promotionList">
+      <app-single-promotion
+        [promotion]="promotion"
+        (removePromo)="removePromo($event)"
+      ></app-single-promotion>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,59 @@
+<div class="card">
+  <div class="card-body" (click)="changeSize()" #cardBody>
+    <div class="stat-widget-five">
+      <div class="stat-icon dib flat-color-1" [ngStyle]="{ color: '#000' }">
+        <i class="pe-7s-star"></i>
+      </div>
+      <div class="stat-content">
+        <div class="text-left dib">
+          <div class="stat-text">{{ promotionTitle }}</div>
+          <div class="stat-heading">{{ promotionShortInfo }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="innerContent">
+      <div class="star-content">
+        <div class="stat-text">
+          <span class="flat-color-6 pe-7s-joy icon-size-medium"></span>
+          კონსოლების სია:
+          <span class="console-list">
+            <span *ngFor="let console of promotionConsoles">
+              {{ console }}
+            </span>
+          </span>
+        </div>
+        <div class="stat-text">
+          <span class="flat-color-3 pe-7s-stopwatch icon-size-medium"></span>
+          მოქმედების ვადა:
+          <span class="console-list" *ngIf="promotionisAlltime">
+            {{ promotionAllTimeText }}
+          </span>
+          <span class="console-list" *ngIf="!promotionisAlltime">
+            {{ promotionDateFrom }} - {{ promotionDateTo }}
+          </span>
+        </div>
+        <div class="stat-text">
+          <span class="flat-color-5 pe-7s-cash icon-size-medium"></span> ახალი
+          ფასი:
+          <span class="console-list">
+            {{ promotionPrice }} {{ promotionCurrency }}
+          </span>
+        </div>
+        <div class="stat-text">
+          <span class="flat-color-2 pe-7s-info icon-size-medium"></span> აქციის
+          შესახებ: <span class="console-list"> {{ promotionFullInfo }} </span>
+        </div>
+      </div>
+    </div>
+    <div class="buttonContainer">
+      <button type="submit" class="btn btn-outline-success">რედაქტირება</button>
+      <button
+        type="submit"
+        class="btn btn-outline-danger"
+        (click)="removePromotion()"
+      >
+        წაშლა
+      </button>
+    </div>
+  </div>
+</div>

@@ -7,7 +7,11 @@
   <app-register-employe *ngIf="state === 'addEmployee'"></app-register-employe>
   <app-register-product *ngIf="state === 'addProduct'"></app-register-product>
   <app-register-promo *ngIf="state === 'addpromo'"></app-register-promo>
-  <app-promolist *ngIf="state === 'promoList'"></app-promolist>
+  <app-promolist
+    *ngIf="state === 'promoList'"
+    [promotions]="promotions"
+    [data]="data"
+  ></app-promolist>
   <app-edit-promo *ngIf="state === 'promoEdit'"></app-edit-promo>
 
   <app-consolelist *ngIf="state === 'consoleList'"></app-consolelist>

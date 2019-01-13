@@ -20,4 +20,7 @@ export class RightSideComponent implements OnInit {
   get state() {
     return this.data.data.gameState;
   }
+  get promotions() {
+    return this.data.data.promotions;
+  }
 }
