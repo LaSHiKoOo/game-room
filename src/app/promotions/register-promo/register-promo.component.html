@@ -1,37 +1,147 @@
 <div class="container customContainer">
   <div class="row">
-      <div class="col-lg-8 offset-lg-2">
-          <div class="card">
-              <div class="card-header">
-                  <strong>აქციის</strong> დამატება
+    <div class="col-lg-8 offset-lg-2">
+      <div class="card">
+        <div class="card-header"><strong>აქციის</strong> დამატება</div>
+        <div class="card-body card-block">
+          <form
+            action="#"
+            method="post"
+            enctype="multipart/form-data"
+            class="form-horizontal"
+          >
+            <div class="row form-group">
+              <div class="col col-md-3">
+                <label for="text-input" class=" form-control-label">
+                  დასახელება
+                </label>
               </div>
-              <div class="card-body card-block">
-                  <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">
-                      <div class="row form-group">
-                          <div class="col col-md-3"><label for="text-input" class=" form-control-label"></label></div>
-                          <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="პროდუქტის სახელი" class="form-control"></div>
-                      </div>
-                      <div class="row form-group">
-                          <div class="col col-md-3"><label for="text-input" class=" form-control-label"></label></div>
-                          <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="ფასი" class="form-control"></div>
-                      </div>
-                      <div class="row form-group">
-                          <div class="col col-md-3"><label for="text-input" class=" form-control-label"></label></div>
-                          <div class="col-12 col-md-9"><input  id="text-input" name="text-input" placeholder="რაოდენობა" class="form-control"></div>
-                      </div>
-                      
-                      
-                  </form>
+              <div class="col-12 col-md-9">
+                <input
+                  type="text"
+                  id="text-input"
+                  name="text-input"
+                  placeholder="აქციის დასახელება"
+                  class="form-control"
+                />
               </div>
-              <div class="card-footer">
-                  <button type="submit" class="btn btn-outline-success">
-                      შენახვა
-                  </button>
-                  <button type="submit" class="btn btn-outline-danger">
-                      წაშლა
-                  </button>
+            </div>
+            <div class="row form-group">
+              <div class="col col-md-3">
+                <label for="text-input" class=" form-control-label">
+                  აქციის ფასი
+                </label>
               </div>
-          </div>
+              <div class="col-12 col-md-9">
+                <input
+                  type="number"
+                  id="text-input"
+                  name="text-input"
+                  placeholder="აქციის ფასი"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col col-md-3">
+                <label for="text-input" class=" form-control-label">
+                  კონსოლები
+                </label>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="form-check-inline form-check">
+                  <div class="checkbox">
+                    <label for="inline-checkbox1" class="form-check-label ">
+                      <input
+                        type="checkbox"
+                        id="inline-checkbox1"
+                        name="checkbox1"
+                        value="option1"
+                        class="form-check-input"
+                      />Option 1
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="inline-checkbox2" class="form-check-label ">
+                      <input
+                        type="checkbox"
+                        id="inline-checkbox2"
+                        name="checkbox2"
+                        value="option2"
+                        class="form-check-input"
+                      />
+                      Option 1
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="inline-checkbox3" class="form-check-label ">
+                      <input
+                        type="checkbox"
+                        id="inline-checkbox3"
+                        name="checkbox3"
+                        value="option3"
+                        class="form-check-input"
+                      />
+                      Option 1
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col col-md-3">
+                <label for="text-input" class=" form-control-label">
+                  მუდმივი
+                </label>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="form-check-inline form-check">
+                  <div class="checkbox">
+                    <label for="inline-checkbox1" class="form-check-label ">
+                      <input
+                        type="checkbox"
+                        id="inline-checkbox"
+                        name="pernamentPromo"
+                        value="pernamentPromo"
+                        class="form-check-input"
+                      />კი
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col col-md-3">
+                <label for="text-input" class=" form-control-label">
+                  აქციის პერიოდი
+                </label>
+              </div>
+              <div class="col-12 col-md-3"><app-calendar></app-calendar></div>
+            </div>
+            <div class="row form-group">
+              <div class="col col-md-3">
+                <label for="text-input" class=" form-control-label">
+                  სრული ინფორმაცია
+                </label>
+              </div>
+              <div class="col-12 col-md-9">
+                <textarea
+                  name="textarea-input"
+                  id="textarea-input"
+                  rows="13"
+                  placeholder="Content..."
+                  class="form-control"
+                  style="margin-top: 0px; margin-bottom: 0px; height: 269px"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-outline-success">შენახვა</button>
+          <button type="submit" class="btn btn-outline-danger">წაშლა</button>
+        </div>
       </div>
+    </div>
   </div>
 </div>

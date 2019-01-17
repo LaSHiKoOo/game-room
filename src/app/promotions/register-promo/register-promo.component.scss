@@ -15,6 +15,15 @@
       padding: 1.25em;
       position: relative;
       width: 100%;
+
+      .form-check-inline{
+        max-width: 100%;
+        flex-wrap: wrap;
+
+        .checkbox{
+          margin-left: 15px;
+        }
+      }
   }
 
   .card-footer{

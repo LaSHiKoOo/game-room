@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { WhiteWidgetComponent } from './components/white-widget/white-widget.component';
@@ -31,6 +32,7 @@ import { ModalBoxComponent } from './modal-box/modal-box.component';
 import { ConfirmModalComponent } from './modal-box/confirm-modal/confirm-modal.component';
 import { StopTimeComponent } from './modal-box/stop-time/stop-time.component';
 import { SinglePromotionComponent } from './components/single-promotion/single-promotion.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -62,9 +64,13 @@ import { SinglePromotionComponent } from './components/single-promotion/single-p
     ModalBoxComponent,
     ConfirmModalComponent,
     StopTimeComponent,
-    SinglePromotionComponent
+    SinglePromotionComponent,
+    CalendarComponent
   ],
-  imports: [BrowserModule],
+  imports: [
+    NgbModule,
+    BrowserModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

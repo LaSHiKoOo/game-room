@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-register-promo',
@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterPromoComponent implements OnInit {
 
+  @ViewChild('dateRange') dateRange: ElementRef;
+
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
 }

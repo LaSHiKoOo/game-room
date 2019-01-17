@@ -1,3 +1,5 @@
-.customContainer{
+.customContainer {
   padding-top: 30px;
+  height: calc(100vh - 145px);
+  overflow-y: scroll;
 }

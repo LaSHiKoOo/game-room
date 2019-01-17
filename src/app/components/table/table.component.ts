@@ -17,6 +17,7 @@ export class TableComponent implements OnInit {
     this.columns = val;
   }
   @Input() set tableData(vals: any) {
+    console.log(vals);
     this.data = vals;
   }
 

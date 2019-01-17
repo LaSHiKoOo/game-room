@@ -2,10 +2,16 @@
   <app-header [appData]="data"></app-header>
 
   <app-content [appData]="data" *ngIf="state === 'home'"></app-content>
-  <app-productlist *ngIf="state === 'productList'"></app-productlist>
+  <app-productlist
+    *ngIf="state === 'productList'"
+    [data]="data"
+  ></app-productlist>
   <app-employerlist *ngIf="state === 'employeeList'"></app-employerlist>
   <app-register-employe *ngIf="state === 'addEmployee'"></app-register-employe>
-  <app-register-product *ngIf="state === 'addProduct'"></app-register-product>
+  <app-register-product
+    *ngIf="state === 'addProduct'"
+    [data]="data"
+  ></app-register-product>
   <app-register-promo *ngIf="state === 'addpromo'"></app-register-promo>
   <app-promolist
     *ngIf="state === 'promoList'"

@@ -202,24 +202,48 @@ export default class AppData {
     ],
     shopContent: [
       {
-        item: 'Coca-Cola',
-        quantity: 15,
-        price: 1.3
+        id: 5634,
+        name: 'კოკა კოლა',
+        price: 1.3,
+        currency: '₾',
+        quantity: 30,
+        danger: false,
+        icon: '../assets/images/shop/cola.svg',
+        class: 'badge badge-complete',
+        status: 'მარაგშია'
       },
       {
-        item: 'Fanta',
-        quantity: 4,
-        price: 1.3
+        id: 5635,
+        name: 'არსი კოლა',
+        price: 1.2,
+        currency: '₾',
+        quantity: 30,
+        danger: false,
+        icon: '../assets/images/shop/cola.svg',
+        class: 'badge badge-complete',
+        status: 'მარაგშია'
       },
       {
-        item: 'Fuse Tea',
-        quantity: 8,
-        price: 2.0
+        id: 5636,
+        name: 'ფანტა ლიმონის',
+        price: 1.1,
+        currency: '₾',
+        quantity: 30,
+        danger: true,
+        icon: '../assets/images/shop/cola.svg',
+        class: 'badge badge-complete',
+        status: 'მარაგშია'
       },
       {
-        item: 'Sprite',
-        quantity: 5,
-        price: 1.3
+        id: 5638,
+        name: 'პეპსი',
+        price: 1.0,
+        currency: '₾',
+        quantity: 0,
+        danger: true,
+        icon: '../assets/images/shop/cola.svg',
+        class: 'badge badge-danger',
+        status: 'ამოიწურა'
       }
     ],
     modalParams: {
@@ -302,5 +326,8 @@ export default class AppData {
     this.data.promotions = this.data.promotions.filter(
       promo => id !== promo.id
     );
+  }
+  addProduct(vall: any) {
+    this.data.shopContent.push(vall);
   }
 }

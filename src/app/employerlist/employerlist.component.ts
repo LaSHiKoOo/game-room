@@ -13,6 +13,7 @@ export class EmployerlistComponent implements OnInit {
       name: 'სახელი',
       product: 'გვარი',
       quantity: 11,
+      icon: '../../assets/images/user/boy.svg',
       class: 'badge badge-complete',
       status: 'working'
     },
@@ -21,6 +22,7 @@ export class EmployerlistComponent implements OnInit {
       name: 'სახელი',
       product: 'გვარი',
       quantity: 11,
+      icon: '../../assets/images/user/boy.svg',
       class: 'badge badge-pending',
       status: 'not working'
     },
@@ -29,6 +31,7 @@ export class EmployerlistComponent implements OnInit {
       name: 'სახელი',
       product: 'გვარი',
       quantity: 11,
+      icon: '../../assets/images/user/boy.svg',
       class: 'badge badge-complete',
       status: 'working'
     },
@@ -37,6 +40,7 @@ export class EmployerlistComponent implements OnInit {
       name: 'სახელი',
       product: 'გვარი',
       quantity: 11,
+      icon: '../../assets/images/user/boy.svg',
       class: 'badge badge-complete',
       status: 'working'
     }

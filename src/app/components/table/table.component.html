@@ -26,7 +26,7 @@
                 <a href="#"
                   ><img
                     class="rounded-circle"
-                    src="../../../assets/avatar/1.jpg"
+                    [src]="item.icon"
                     alt=""
                 /></a>
               </div>
@@ -37,7 +37,7 @@
             </td>
             <td>
               <span class="product" *ngIf="item.product">{{ item.product }}</span>
-              <span class="product" *ngIf="item.price">{{ item.price }}</span>
+              <span class="product" *ngIf="item.price">{{ item.price }} {{ item.currency }} </span>
             </td>
             <td *ngIf="item.quantity>-1">
               <span class="count">{{ item.quantity }}</span>

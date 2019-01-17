@@ -4,13 +4,14 @@
     padding: 0;
     border: 0px solid transparent;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 
     .card-body{
         float: left;
         padding: 1.25em;
         position: relative;
         width: 100%;
+
 
         .box-title{
             font-weight: 600;
@@ -88,6 +89,9 @@
                 }
             }
             td{
+              .rounded-circle{
+                border-radius: 20%!important;
+              }
                 &:last-child{
                     text-align: center;
                 }
@@ -98,7 +102,7 @@
             color: white;
             padding: 10px;
             text-transform: uppercase;
-            font-weight: normal;    
+            font-weight: normal;
         }
         .badge-complete{
             background: #00c292;
@@ -107,4 +111,5 @@
             background: #fb9678;
         }
     }
+
 }

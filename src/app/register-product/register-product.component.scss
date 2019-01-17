@@ -1,8 +1,8 @@
-.customContainer{
+.customContainer {
   padding-top: 30px;
 }
 
-.card{
+.card {
   margin-bottom: 1.875em;
   border-radius: 5px;
   padding: 0;
@@ -10,23 +10,24 @@
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 
-  .card-body{
-      float: left;
-      padding: 1.25em;
-      position: relative;
-      width: 100%;
+  .card-body {
+    float: left;
+    padding: 1.25em;
+    position: relative;
+    width: 100%;
+    .customCol {
+      padding-left: 45px;
+    }
   }
 
-  .card-footer{
+  .card-footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     height: 100px;
 
-    button{
+    button {
       margin: 10px;
     }
   }
-
 }
-
