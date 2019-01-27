@@ -1,7 +1,7 @@
 <div id="right-panel" class="right-panel">
   <app-header [appData]="data"></app-header>
 
-  <app-content [appData]="data" *ngIf="state === 'home'"></app-content>
+  <!-- <app-content [appData]="data" *ngIf="state === 'home'"></app-content>
   <app-productlist
     *ngIf="state === 'productList'"
     [data]="data"
@@ -22,7 +22,9 @@
 
   <app-consolelist *ngIf="state === 'consoleList'"></app-consolelist>
   <app-register-console *ngIf="state === 'addconsole'"></app-register-console>
-  <app-edit-console *ngIf="state === 'consoleEdit'"></app-edit-console>
+  <app-edit-console *ngIf="state === 'consoleEdit'"></app-edit-console> -->
+
+  <app-user-profile></app-user-profile>
 
   <div class="clearfix"></div>
 

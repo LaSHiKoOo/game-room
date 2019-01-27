@@ -33,6 +33,7 @@ import { ConfirmModalComponent } from './modal-box/confirm-modal/confirm-modal.c
 import { StopTimeComponent } from './modal-box/stop-time/stop-time.component';
 import { SinglePromotionComponent } from './components/single-promotion/single-promotion.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { CalendarComponent } from './components/calendar/calendar.component';
     ConfirmModalComponent,
     StopTimeComponent,
     SinglePromotionComponent,
-    CalendarComponent
+    CalendarComponent,
+    UserProfileComponent
   ],
   imports: [
     NgbModule,
