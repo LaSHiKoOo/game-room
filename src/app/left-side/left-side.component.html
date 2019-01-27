@@ -5,11 +5,11 @@
   <app-menu
     [appData]="data"
     class="leftMenu"
-    *ngIf="userStatus === 'admin'"
+    *ngIf="userRole === 'Administrator' || userRole === 'Developer'"
   ></app-menu>
   <app-shop-fridge
     [data]="data"
     class="ForCustomer"
-    *ngIf="userStatus === 'customer'"
+    *ngIf="userRole === 'Customer'"
   ></app-shop-fridge>
 </aside>

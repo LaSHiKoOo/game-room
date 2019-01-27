@@ -10,18 +10,37 @@
         <form>
           <div class="form-group">
             <label>სახელი</label>
-            <input type="name" class="form-control" placeholder="სახელი" />
+            <input
+              type="name"
+              class="form-control"
+              placeholder="სახელი"
+              #nameField
+            />
           </div>
           <div class="form-group">
             <label>გვარი</label>
-            <input type="surname" class="form-control" placeholder="გვარი" />
+            <input
+              type="surname"
+              class="form-control"
+              placeholder="გვარი"
+              #surnameField
+            />
           </div>
           <div class="form-group">
             <label>პაროლი</label>
-            <input type="password" class="form-control" placeholder="პაროლი" />
+            <input
+              type="password"
+              class="form-control"
+              placeholder="პაროლი"
+              #passField
+            />
           </div>
 
-          <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">
+          <button
+            type="button"
+            (click)="authorize()"
+            class="btn btn-success btn-flat m-b-30 m-t-30"
+          >
             შესვლა
           </button>
         </form>

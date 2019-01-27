@@ -5,7 +5,7 @@
         ><img src="../../assets/images/logo.png" alt="Logo"
       /></a>
       <a
-        *ngIf="userStatus === 'admin'"
+        *ngIf="userRole === 'Administrator' || userRole === 'Developer'"
         id="menuToggle"
         class="menutoggle"
         (click)="menuToggle()"
@@ -25,7 +25,7 @@
         >
           <img
             class="user-avatar rounded-circle"
-            src="../../assets/images/admin.jpg"
+            [src]="userAvatar"
             alt="User Avatar"
           />
         </a>
@@ -40,7 +40,9 @@
 
           <a class="nav-link" href="#"><i class="fa fa-cog"></i>Settings</a>
 
-          <a class="nav-link" href="#"><i class="fa fa-power-off"></i>Logout</a>
+          <a class="nav-link" href="" (click)="logOut()"
+            ><i class="fa fa-power-off"></i>Logout</a
+          >
         </div>
       </div>
     </div>

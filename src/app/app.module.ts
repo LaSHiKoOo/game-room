@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { WhiteWidgetComponent } from './components/white-widget/white-widget.component';
@@ -34,6 +34,8 @@ import { StopTimeComponent } from './modal-box/stop-time/stop-time.component';
 import { SinglePromotionComponent } from './components/single-promotion/single-promotion.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AuthenticationService } from './services/authenticate.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -69,11 +71,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     CalendarComponent,
     UserProfileComponent
   ],
-  imports: [
-    NgbModule,
-    BrowserModule
-  ],
-  providers: [],
+  imports: [NgbModule, BrowserModule, HttpClientModule],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

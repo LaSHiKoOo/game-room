@@ -16,8 +16,8 @@ export class LeftSideComponent implements OnInit {
 
   ngOnInit() {}
 
-  get userStatus() {
-    return this.data.data.userStatus;
+  get userRole() {
+    return this.data.data.user.userRole;
   }
 
   CustmerMenuToggle() {

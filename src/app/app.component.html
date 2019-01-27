@@ -1,10 +1,16 @@
-<app-left-side [appData]="data"></app-left-side>
-<app-right-side [appData]="data"></app-right-side>
-<!-- <app-start-page></app-start-page> -->
+<app-start-page *ngIf="userStatus === 'unAuthorized'"></app-start-page>
+<app-left-side
+  *ngIf="userStatus === 'authorized'"
+  [appData]="data"
+></app-left-side>
+<app-right-side
+  *ngIf="userStatus === 'authorized'"
+  [appData]="data"
+></app-right-side>
 <app-modal-box
+  *ngIf="currentModal !== ''"
   (closeModal)="resetModal($event)"
   (sellItems)="confirmSell('shop', $event)"
   (stopTimer)="confirmSell('console', $event)"
   [modalContent]="modalParams"
-  *ngIf="currentModal !== ''"
 ></app-modal-box>

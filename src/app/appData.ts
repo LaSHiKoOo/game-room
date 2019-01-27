@@ -1,7 +1,18 @@
-export default class AppData {
+class AppData {
   data: any = {
     currentModal: '',
-    userStatus: 'admin',
+    userStatus: 'unAuthorized',
+    user: {
+      id: '',
+      firstName: '',
+      lastName: '',
+      avatarId: '',
+      email: '',
+      phone: 0,
+      userRole: '',
+      createDate: '',
+      token: ''
+    },
     gameState: 'home',
     WidgetContent: [
       {
@@ -278,6 +289,19 @@ export default class AppData {
         info: []
       }
     },
+    avatars: [
+      '../assets/avatar/avatar-1.svg',
+      '../assets/avatar/avatar-2.svg',
+      '../assets/avatar/avatar-3.svg',
+      '../assets/avatar/avatar-4.svg',
+      '../assets/avatar/avatar-5.svg',
+      '../assets/avatar/avatar-6.svg',
+      '../assets/avatar/avatar-7.svg',
+      '../assets/avatar/avatar-8.svg',
+      '../assets/avatar/avatar-9.svg',
+      '../assets/avatar/avatar-10.svg'
+    ],
+
     promotions: [
       {
         id: 1,
@@ -331,3 +355,5 @@ export default class AppData {
     this.data.shopContent.push(vall);
   }
 }
+
+export default new AppData();
