@@ -24,7 +24,7 @@
   <app-register-console *ngIf="state === 'addconsole'"></app-register-console>
   <app-edit-console *ngIf="state === 'consoleEdit'"></app-edit-console>
 
-  <app-user-profile></app-user-profile>
+  <app-user-profile *ngIf="state === 'userProfile'"></app-user-profile>
 
   <div class="clearfix"></div>
 

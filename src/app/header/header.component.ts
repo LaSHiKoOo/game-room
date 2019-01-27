@@ -45,6 +45,10 @@ export class HeaderComponent implements OnInit {
     return this.data.data.user.userRole;
   }
 
+  changeState(state: string) {
+    this.data.changeState(state);
+  }
+
   logOut() {
     localStorage.clear();
     location.reload();
