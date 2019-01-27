@@ -1,6 +1,7 @@
 .customContainer {
   padding-top: 30px;
   height: calc(100vh - 145px);
+  overflow-y: scroll;
 
   .user-name {
     display: flex;
@@ -11,7 +12,8 @@
   .user-profile {
     display: flex;
     background: white;
-    padding: 40px 20px;
+    height: 350px;
+    transition: 1s;
 
     .user-picture {
       display: flex;
@@ -26,11 +28,10 @@
     }
 
     .user-info {
-      
-
       .top {
-        height: 50%;
+        height: 40%;
         display: flex;
+
         .fullWidth {
           display: block;
           width: 100%;
@@ -48,7 +49,7 @@
       }
 
       .bottom {
-        height: 50%;
+        height: 60%;
 
         .row {
           height: 100%;
@@ -132,18 +133,97 @@
       }
     }
     .history {
-      
-      span{
+      span {
         font-size: 18px;
         color: #435466;
         cursor: pointer;
       }
-      
-      
-      .stat{
-      color: #00c292;
-      margin: 0 20px;
+
+      .stat {
+        color: #00c292;
+        margin: 10px;
+      }
     }
   }
+  .statContainer {
+    transition: 1s;
+    height: 0px;
+    overflow: hidden;
+    background: #f1f2f7;
+    margin-top: 20px;
+    &.extended {
+      height: 400px;
+    }
+
+    span {
+      color: #435466;
+    }
+
+    i {
+      color: #00c292;
+      font-size: 30px;
+    }
+
+    .historyTitles {
+      display: flex;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    .historyContent {
+      display: flex;
+      background: white;
+      font-size: 17px;
+      align-items: center;
+
+      .historyLeft {
+        display: flex;
+        align-items: center;
+      }
+
+      .weekSize {
+        font-size: 17px;
+        color: #00c292;
+      }
+      .dataSize {
+        font-size: 14px;
+      }
+
+      // .historyCount {
+      //   font-size: 30px;
+      //   color: #00c292;
+      // }
+
+      .historyCount {
+        position: relative;
+        height: 80px;
+
+        .startPrice {
+          margin-top: 15px;
+          position: absolute;
+          width: 100%;
+          text-align: center;
+
+          span {
+            font-size: 30px;
+            color: #00c292;
+          }
+        }
+        .priceIcon {
+          position: absolute;
+          width: 100%;
+          top: 45px;
+          text-align: center;
+
+          span {
+            font-size: 14px;
+            color: #435466;
+          }
+        }
+      }
+    }
+  }
+  .noPadding {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }

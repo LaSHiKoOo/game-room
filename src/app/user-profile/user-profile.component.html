@@ -45,11 +45,38 @@
               </div>
             </div>
           </div>
+          <div class="col-md-12 history" (click)="changeSize()">
+            <i class="fas fa-chart-line stat"></i>
+            <span>საერთო სტატისტიკა</span>
+          </div>
         </div>
       </div>
-      <div class="history">
-        <i class="fas fa-chart-line stat"></i>
-        <span>საერთო სტატისტიკა</span>
+    </div>
+  </div>
+
+  <div class=" col-md-12 noPadding statContainer" #userStat>
+    <div class="col-md-12 noPadding historyTitles">
+      <div class="col-md-4 noPadding"><span>თარიღი</span></div>
+      <div class="col-md-2 noPadding"></div>
+      <div class="col-md-3 noPadding"><span>კონსოლების შემოსავალი</span></div>
+      <div class="col-md-3 noPadding"><span>მაღაზიის შემოსავალი</span></div>
+    </div>
+    <div class="col-md-12 noPadding historyContent">
+      <div class="col-md-4 noPadding historyLeft">
+        <div class="col-md-2"><i class="far fa-calendar-alt "></i></div>
+        <div class="col-md-10">
+          <div><span class="weekSize">პარასკევი</span></div>
+          <div><span class="dataSize">12.12.2019</span></div>
+        </div>
+      </div>
+      <div class="col-md-2 noPadding"><i class="fas fa-share"></i></div>
+      <div class="col-md-3 noPadding historyCount">
+        <div class="startPrice"><span>36.55</span></div>
+        <div class="priceIcon"><span>ლარი</span></div>
+      </div>
+      <div class="col-md-3 noPadding historyCount">
+        <div class="startPrice"><span>36.55</span></div>
+        <div class="priceIcon"><span>ლარი</span></div>
       </div>
     </div>
   </div>
